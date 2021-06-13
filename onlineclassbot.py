@@ -20,21 +20,13 @@ def input(width, row, column, colspan, padx, pady):
 
 
 label('Subject Name', '0', '0', '0', '3')  # Subject Name Label
-# input('20', '1', '0', '2', '10', '3')  # Subject Input
 subject = Entry(window, width=20, borderwidth=2)
 subject.grid(row=1, column=0, columnspan=2, padx=10, pady=3)
 label('Start Time', '0', '2', '0', '0')  # Start Time Label
-# input('20', '1', '2', '2', '10', '0')  # Start Time Input
 Spinbox(window, from_=1, to=12, width=7, wrap=True).grid(row=1, column=2)
-#Spinbox(window, from_=0, to=59, width=3, wrap=True).grid(row=1, column=3)
-#Spinbox(window, from_=0, to=59, width=5).grid(row=1, column=4)
 label('End Time', '0', '4', '0', '0')  # End Time Label
-# input('20', '1', '4', '2', '10', '0')  # End Time Input
 Spinbox(window, from_=1, to=12, width=7, wrap=True).grid(row=1, column=4)
-#Spinbox(window, from_=0, to=59, width=3, wrap=True).grid(row=1, column=5)
-#Spinbox(window, from_=0, to=59, width=5).grid(row=1, column=7)
 label('Classroom Link', '2', '0', '0', '0')  # Classroom Link Label
-input('53', '3', '0', '5', '0', '3')  # Classroom Link Input
 label('Credits', '0', '6', '0', '0')
 
 credits = Listbox(window, width=42, height=15)
