@@ -9,4 +9,4 @@ This is a simple UI for desktop app using Tkinter module in Python.
 
 ### Use the line of code below inside the directory to execute and run the app.
 
-```python3 olineclassbot.py```
+```python3 onlineclassbot.py```
