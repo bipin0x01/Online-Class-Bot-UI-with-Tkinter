@@ -1,11 +1,11 @@
 from tkinter import *
 
 window = Tk()  # create a window
-window.geometry("700x400")  # Set the window size to 500px X 300px
+window.geometry("850x450")  # Set the window size to 500px X 300px
 # set minimum window size value
-window.minsize(700, 400)
+window.minsize(850, 450)
 # set maximum window size value
-window.maxsize(700, 400)
+window.maxsize(850, 450)
 window.title("Online Class Bot by Bipin Thapa")  # Application Title
 
 
@@ -26,13 +26,16 @@ label('Start Time', '0', '2', '0', '0')  # Start Time Label
 Spinbox(window, from_=1, to=12, width=7, wrap=True).grid(row=1, column=2)
 label('End Time', '0', '4', '0', '0')  # End Time Label
 Spinbox(window, from_=1, to=12, width=7, wrap=True).grid(row=1, column=4)
+#Spinbox(window, from_=0, to=59, width=3, wrap=True).grid(row=1, column=5)
+#Spinbox(window, from_=0, to=59, width=5).grid(row=1, column=7)
 label('Classroom Link', '2', '0', '0', '0')  # Classroom Link Label
+input('35', '3', '0', '4', '0', '3')  # Classroom Link Input
 label('Credits', '0', '6', '0', '0')
 
 credits = Listbox(window, width=42, height=15)
 credits.grid(row=1, column=6, rowspan=5, columnspan=2)
 credits.insert(
-    1, " This program is made for fun and educational")
+    1, "This program is made for fun and educational")
 credits.insert(
     2, " purpose only. It can be used to automatically")
 credits.insert(3, " join the entered class in specified time.")
@@ -57,7 +60,7 @@ def subjectlist_parser():
 
 
 Button(window, text="Add Subject", command=subjectlist_parser).grid(
-    row=3, column=5)  # Add Subject Button
+    row=3, column=4)  # Add Subject Button
 
 
 Checkbutton(window, width=15, text=" Record the sessions.").grid(
@@ -67,7 +70,7 @@ Checkbutton(window, width=30, text=" Stop bot after completing all sessions.").g
 Button(window, text="Start Bot", width=10).grid(row=8, column=6)
 Button(window, text="Stop Bot", width=10).grid(row=8, column=7)
 
-Listbox(window, height=17, width=70).grid(
+Listbox(window, height=17, width=55).grid(
     row=5, column=0, columnspan=6, rowspan=6, pady=10, padx=10)
 
 window.mainloop()
