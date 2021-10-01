@@ -32,25 +32,15 @@ label('Classroom Link', '2', '0', '0', '0')  # Classroom Link Label
 input('35', '3', '0', '4', '0', '3')  # Classroom Link Input
 label('Credits', '0', '6', '0', '0')
 
-credits = Listbox(window, width=42, height=15)
+text='''This program is made for fun and educational.
+        purpose only. It can be used to automatically
+        join the entered class in specified time.
+        Instructions #Add the subject, class time and class link. It
+        will only work If the class link is always same and doesnot change with time. #Click on \"Add Subject\" ButtonClass data will be added to the list.#Tick other preffered checkboxes.'''
+
+credits = Text(window, width=42, height=15)
 credits.grid(row=1, column=6, rowspan=5, columnspan=2)
-credits.insert(
-    1, "This program is made for fun and educational")
-credits.insert(
-    2, " purpose only. It can be used to automatically")
-credits.insert(3, " join the entered class in specified time.")
-credits.insert(4, " Instructions")
-credits.insert(5, " #Add the subject, class time and class link. It")
-credits.insert(
-    6, " will only work If the class link is always same")
-credits.insert(7, " and doesnot change with time.")
-credits.insert(8, " #Click on \"Add Subject\" Button")
-credits.insert(9, " Class data will be added to the list.")
-credits.insert(10, " #Tick other preffered checkboxes.")
-credits.insert(11, " #Then Click on \"Start Bot\" button.")
-credits.insert(12, "")
-credits.insert(13, "")
-credits.insert(14, "       Made for fun with love by Bipin Thapa ❤")
+credits.insert(0.0,text)
 
 
 def subjectlist_parser():
